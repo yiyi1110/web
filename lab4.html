@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Sinh viên</title>
+    <link rel="stylesheet" href="stylelab4.css">
+    <script src="jslab4.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Quản lý Sinh viên</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#add">Thêm Sinh viên</a></li>
+            <li><a href="#edit">Sửa thông tin</a></li>
+            <li><a href="#delete">Xóa Sinh viên</a></li>
+            <li><a href="#search">Tìm kiếm</a></li>
+        </ul>
+    </nav>
+
+    <section id="add">
+        <h2>Thêm Sinh viên</h2>
+        <form id="addForm">
+            <label for="name">Tên:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Tuổi:</label>
+            <input type="number" id="age" required>
+
+            <label for="grade">Điểm:</label>
+            <input type="text" id="grade" required>
+
+            <button type="button" onclick="addStudent()">Thêm Sinh viên</button>
+        </form>
+    </section>
+
+    <section id="edit">
+        <h2>Sửa thông tin Sinh viên</h2>
+        <!-- Form sửa thông tin Sinh viên -->
+    </section>
+
+    <section id="delete">
+        <h2>Xóa Sinh viên</h2>
+        <form id="deleteForm">
+            <label for="deleteId">ID Sinh viên:</label>
+            <input type="number" id="deleteId" required>
+
+            <button type="button" onclick="deleteStudent()">Xóa Sinh viên</button>
+        </form>
+    </section>
+
+    <section id="search">
+        <h2>Tìm kiếm Sinh viên</h2>
+        <!-- Form tìm kiếm Sinh viên -->
+    </section>
+
+    <section id="display">
+        <h2>Danh sách Sinh viên</h2>
+        <div id="studentList"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Quản lý Sinh viên</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

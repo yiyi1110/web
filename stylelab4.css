@@ -1,0 +1,74 @@
+/* Reset some default styles */
+
+body,
+h1,
+h2,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Basic styling for the page */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #eee;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    margin: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
